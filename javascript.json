@@ -1,0 +1,53 @@
+{
+	"Function Component": {
+		"prefix": "rnfc",
+		"body": [
+			"import React, { useState,useEffect } from 'react';",
+			"import {View,StyleSheet,Text} from 'react-native';",
+			"",
+			"const ${TM_FILENAME_BASE}=({navigation:{navigate,goBack},route})=> {",
+			"const[state,setState]=useState({",
+			"isLoading:false})",
+			"",
+			"const updateState = data => {setState(state=>({...state,...data})}",
+			"",
+			"const{isLoading}=state",
+			"",
+			"    return (",
+			"        <View style={styles.container}><Text>$0</Text></View>",
+			"    );",
+			"}",
+			"",
+			"const styles = StyleSheet.create({",
+			"    container: {}",
+			"})",
+			"export default ${TM_FILENAME_BASE}"
+		]
+	},
+	"React Native Component": {
+		"prefix": "imrnc",
+		"body": [
+			"import React, { Component } from \"react\";",
+			"import { \n\tView,\n\tText,\n\tStyleSheet\n} from \"react-native\";",
+			"\nclass ${TM_FILENAME_BASE} extends Component {",
+			"\trender() {",
+			"\t\treturn (",
+			"\t\t\t<View style={styles.container}>",
+			"\t\t\t\t<Text>$0</Text>",
+			"\t\t\t</View>",
+			"\t\t);",
+			"\t}",
+			"}",
+			"\nconst styles = StyleSheet.create({",
+			"\tcontainer: {",
+			"\t\tflex: 1,",
+			"\t\talignItems: 'center',",
+			"\t\tjustifyContent: 'center'",
+			"\t}",
+			"});",
+			"",
+			"export default ${TM_FILENAME_BASE}"
+		],
+		"description": "React Component"
+	}
+}
