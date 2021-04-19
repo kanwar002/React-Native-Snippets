@@ -9,7 +9,7 @@
 			"const[state,setState]=useState({",
 			"isLoading:false})",
 			"",
-			"const updateState = data => {setState(state=>({...state,...data})}",
+			"const updateState = data => {setState(state=>({...state,...data}))}",
 			"",
 			"const{isLoading}=state",
 			"",
